@@ -1,56 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness World</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="g3.jpg" >
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness World</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="g3.jpg">
 </head>
 
 
 
 <body id="Home">
 
-      <div>
-        <nav id="navbar" class="bg-dark">
-            <div class="logo">
-              
-              <a class="navbar-brand" href="#logo">
-                <img src="g3.jpg" alt="" width="70" height="50"> </a>
-<a href="#home"></a>
-            </div>
-          
-      
-<ul>
-    <li><a href="#Home">Home</a></li>
-    <li><a href="#programs">programs</a></li>
-    <li><a href="#contact">contact</a></li>
-    <li><a href="#about">about</a></li>
 
+  <nav id="navbar" class="bg-dark">
+    <div class="logo">
 
-</ul>
-
-</nav>
-<section id="showcase" class="text-center">
-  <div class="showcase-content">
-    <h1 class="l-heading ">You can , get started <br> easy with <span class="text-primary">Fitness World</span></h1>
-    
-    <div>
-      <label>username</label>
-      <input type="text">
-     <br>
-      <label>password</label>
-      <input type="text">
-      <br>
-      <a href="contact" class="btn">LogIn </a>
+      <a class="navbar-brand" href="#logo">
+        <a href="#home"> <img src="g3.jpg" alt="" width="70" height="50"> </a>
     </div>
-  </div>
-</section>
 
- <script src="project.js"></script>  
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+    <ul>
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#programs">programs</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#about">about</a></li>
+
+
+    </ul>
+
+  </nav>
+  <section id="showcase" class="text-center">
+    <div class="showcase-content">
+      <h1 class="l-heading ">You can , get started <br> easy with <span class="text-primary">Fitness World</span></h1>
+
+      <div>
+        <label>username</label>
+        <input type="text">
+        <br>
+        <label>password</label>
+        <input type="text">
+        <br>
+        <a href="contact" class="btn">LogIn </a>
+      </div>
+    </div>
+  </section>
+  <div>
+
+  </div>
+
+  <section id="programs" class="text-center">
+    <h2 class="m-heading text-center py-1">kinde of <span class="text-primary">programs</span></h2>
+    <div class="container"></div>
+    <div class="boxes">
+      <div class="box">
+        <img src="y1.jpg">
+        <div>
+    
+          <button class=" yoga">yoga</button>
+          <p id="paraYoga">Yoga is one of the famous sports that brings many benefits to the body, despite its ease</p>
+           <label for="">write your comment</label> <br>
+        <input type="text" id="inputYoga"> <br>
+        <button  id="inputYoga" onclick="addComment()">addComment</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="g8.jpg">
+        <div>
+        
+          <button class=" BodyBuilding">BodyBuilding</button>
+          <p id= "paraBody">Make the body more strong and fight against diseases</p>
+          <label for="">write your comment</label> <br>
+          <input type="text" id="inputBody"> <br>
+          <button id="inputBody" onclick="addComment()">addComment</button>
+         </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+   
+  </section>
+
+  
+
+    <script src="project.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
+
 </html>

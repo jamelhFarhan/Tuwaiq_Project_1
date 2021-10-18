@@ -73,4 +73,19 @@ background-color: #ff2e6f;
 #showcase {
 background-color: gainsboro;
 }
+#programs{
+background-color: lightgrey;
+}
 
+#programs {
+color: lightslategray;
+}
+#programs .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#programs .boxes .box {
+flex: 1;
+padding: 3px;
+}
