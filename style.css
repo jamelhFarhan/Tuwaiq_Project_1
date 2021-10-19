@@ -6,6 +6,7 @@ box-sizing: border-box;
 
 html  , body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
 } 
 a {
     text-decoration: none;
@@ -89,3 +90,35 @@ color: lightslategray;
 flex: 1;
 padding: 3px;
 }
+#mainContainer {
+    background-color:  lightgrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+  .secondryContainer {
+    border: 1px solid black;
+    text-align: center;
+  }
+  /* we made the page responsive by changing the grid-template-columns from having 3 columns to 2 cloumns only when the screen size go below 600px  */
+  @media (max-width: 700px) {
+    #mainContainer {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    #mainContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .bg-light {
+      background-color: #eaeaea;
+color: #252525;
+
+
+
+    }
