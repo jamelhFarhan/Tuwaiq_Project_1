@@ -4,14 +4,28 @@
 box-sizing: border-box;
 }
 
-html  , body{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+    
+    color: #848484;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
 
-} 
+  h1, h2, h3, h4 {
+    color: #212121;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+  }
+
 a {
     text-decoration: none;
 
 } 
+
 .container{
     max-width: 80%;
     margin: auto;
@@ -91,7 +105,10 @@ flex: 1;
 padding: 3px;
 }
 #mainContainer {
-    background-color:  lightgrey;
+background-color: whitesmoke;
+color: slategrey;
+font-size: 3px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
@@ -102,8 +119,8 @@ padding: 3px;
     border: 1px solid black;
     text-align: center;
   }
-  /* we made the page responsive by changing the grid-template-columns from having 3 columns to 2 cloumns only when the screen size go below 600px  */
-  @media (max-width: 700px) {
+  
+  @media (max-width: 650px) {
     #mainContainer {
       grid-template-columns: 1fr 1fr;
     }
@@ -118,7 +135,22 @@ padding: 3px;
   .bg-light {
       background-color: #eaeaea;
 color: #252525;
-
-
-
     }
+    #about .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #about .about-content div,
+    #about .about-content  img{
+ flex: 1;
+ margin: 2px;
+    }
+    #about .about-content img{
+        width: 50%;
+        margin-left: 15px;
+        border: 5px solid ;
+    }
+body{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbPdWztGtCjGneou6mwgsqvlFFNNsYBOP_lQ&usqp=CAU);
+}

@@ -19,7 +19,7 @@
 
 <body id="Home">
 
-
+<!-- <button id="btnh"> Home</button> -->
   <nav id="navbar" class="bg-dark">
     <div class="logo">
 
@@ -29,17 +29,18 @@
 
 
     <ul>
-      <li><a href="#Home">Home</a></li>
-      <li><a href="#programs">programs</a></li>
-      <li><a href="#Comment">Comment</a></li>
-      <li><a href="#about">about</a></li>
+      <li onclick="showProgram()"><a id="homeA" >home</a></li>
+      <li onclick="showProgram()"><a id="programsA">programs</a></li>
+      <li onclick="showComment()"><a id="commentA">comment</a></li>
+      <li onclick="showAbout()"><a id="aboutA">about</a></li>
 
 
     </ul>
 
   </nav>
   <section id="showcase" class="text-center">
-    <div class="showcase-content">
+    
+    <div id = "login" class="showcase-content">
       <h1 class="l-heading ">You can , get started <br> easy with <span class="text-primary">Fitness World</span></h1>
 
       <div>
@@ -56,8 +57,8 @@
   <div>
 
   </div>
+  <section id="programs" class="text-center tab" >
 
-  <section id="programs" class="text-center">
     <h2 class="m-heading text-center py-1">kinde of <span class="text-primary">programs</span></h2>
     <div class="container"></div>
     <div class="boxes">
@@ -72,7 +73,7 @@
       </div>
       <div class="box">
         <img src="g8.jpg">
-        <div>
+        <dihv>
         
           <button class=" BodyBuilding">BodyBuilding</button>
           <p id= "paraBody">Make the body more strong and fight against diseases</p>
@@ -89,21 +90,23 @@
 
    
   </section>
-<section id="Comment">
-  
-  <div id="mainContainer" class="comment"> 
+<section id="Comment" class="tab">
 
-   <input type="text" placeholder="Enter Name Here" id="name"> 
-  <input type="text" placeholder="Enter comment Here" id="comment"> 
-   <button id="btn" onclick="addComment()">Add</button> 
+  
+  <input type="text" placeholder="Enter Name Here" id="name"> 
+ <input type="text" placeholder="Enter comment Here" id="comment"> 
+  <button id="btn" onclick="addComment()">Add</button> 
+  
+  <div id="mainContainer" class="comment "> 
+
   </div>
   
-  <button id="hideBtn" onclick="hideComment()" >Hide Button</button> 
-<button id="showBtn" onclick="showComment()">Show Button</button> 
+  <!-- <button id="hideBtn" onclick="hideComment()" >Hide Button</button>  -->
+<!-- <button id="showBtn" onclick="showComment()">Show Button</button>  -->
    
 </section>
   
-<section id="about" class="bg-light">
+<section id="about" class="tab">
 <div class="container">
     <h2 class="m-heading text-center py-1">Hello , we are the <span class="text-primary">Fitness World</span></h2>
     <div class="about-content">
@@ -113,7 +116,6 @@
         <p>An online store interested in sports and physical activities with a variety of distinctive choices through which we seek to meet the expectations of our customers</p>
       </div>
        <img src="fitnes.jpg" alt="" class="box-shadow">
-
   </div>
 </div>
 </section>

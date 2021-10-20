@@ -1,30 +1,48 @@
-$(document).ready(function(){
+const programs = $("#programs")
+const Comment = $("#Comment")
+const about = $("#about")
+const login = $("#login")
+
+const commentA = $("#commentA")
+
+// programs.hide()
+Comment.hide()
+about.hide()
+
+
+
+ $(document).ready(function(){
+  $('.BodyBuilding').click(function(){
+        $('#paraBody').hide(2000)
+           })
+   $('.BodyBuilding').dblclick(function(){
+         $('#paraBody').show(2000)
+     })
+
+ })
+ $(document).ready(function(){
     $('.yoga').click(function(){
-    $('#paraYoga').hide(2000)
-    })
-    $('.yoga').dblclick(function(){
-        $('#paraYoga').show(2000)
-    })
-})
+          $('#paraYoga').hide(2000)
+             })
+     $('.yoga').dblclick(function(){
+           $('#paraYoga').show(2000)
+       })
+  
+   })
+ 
 
-$(document).ready(function(){
-    $('.BodyBuilding').click(function(){
- $('#paraBody').hide(2000)
-    })
-    $('.BodyBuilding').dblclick(function(){
-        $('#paraBody').show(2000)
-    })
-})
+
+
  const inputBody = $("#inputBody")
-// function addComment(){
-//     console.log(inputBody.val())
+ function addComment(){
+    console.log(inputBody.val())
 
-// }
+ }
  const inputYoga = $("#inputYoga")
-// function addComment(){
-// console.log (inputYoga.val())
+ function addComment(){
+ console.log (inputYoga.val())
 
-// }
+ }
 
 
  const mainContainer = $("#mainContainer");
@@ -36,14 +54,15 @@ const FitnessArr = [
      { name: "jamelh", Comment :"good like" },
     { name: "sara",    Comment: "good gym"  },
      { name: "suad",   Comment: "loive it"   },
-     { name: "fathemh",   Comment: "can do"   },
+     { name: "fatemh",   Comment: "can do"   },
    ];
    function renderArr(array){
    for (let i = 0; i < array.length; i++) {
      const div = $(`<div class="secondryContainer">
      <h1>${array[i].name}</h1>
          <h1>${array[i].Comment}</h1>
-    
+<button  id="${i}" onclick="deleteComment(${i})"> delete </button>
+
       </div>`);
 
      mainContainer.append(div);
@@ -58,15 +77,34 @@ const FitnessArr = [
      FitnessArr.push(newComment);
 
 
-     renderArr([newComment]);
+    //  renderArr([newComment]);
+    mainContainer.html("")
+  renderArr(FitnessArr)
     
      }
     
- function hideComment() {
+ function showAbout() {
  
-     mainContainer.hide();
+    programs.hide()
+    Comment.hide()
+    about.show()
 
  }
 function showComment() {
-     mainContainer.show();
+    programs.hide()
+    Comment.show()
+    about.hide()
 }
+
+function showProgram() {
+    programs.show()
+    Comment.hide()
+    about.hide()
+}
+
+
+function deleteComment(id) {
+    FitnessArr.splice(id,1)
+mainContainer.html("")
+  renderArr(FitnessArr)
+  }
