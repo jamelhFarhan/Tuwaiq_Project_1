@@ -5,9 +5,9 @@ box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 25px;
     
     color: #848484;
     font-weight: 300;
@@ -85,15 +85,13 @@ background-color: #ff2e6f;
 #navbar ul li a:hover {
     background-color:#ff2e6f;
 }
-#showcase {
-background-color: gainsboro;
-}
-#programs{
-background-color: lightgrey;
+
+#programs .img{
+    border-radius: 50%;
 }
 
 #programs {
-color: lightslategray;
+color: #252525;
 }
 #programs .boxes {
     display: flex;
@@ -105,19 +103,21 @@ flex: 1;
 padding: 3px;
 }
 #mainContainer {
-background-color: whitesmoke;
-color: slategrey;
-font-size: 3px;
+background-color: white;
+color: white;
+font-size: 10px;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
     gap: 5px;
     margin-bottom: 5px;
+    
   }
   .secondryContainer {
     border: 1px solid black;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   @media (max-width: 650px) {
@@ -134,9 +134,10 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   
   .bg-light {
       background-color: #eaeaea;
-color: #252525;
+        color: #252525;
     }
     #about .about-content {
+        color: #252525;
         display: flex;
         align-items: center;
         justify-content: center;

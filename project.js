@@ -51,10 +51,10 @@ const commentInput = $("#comment");
 
 
 const FitnessArr = [
-     { name: "jamelh", Comment :"good like" },
+     { name: "ahmad", Comment :"good like" },
     { name: "sara",    Comment: "good gym"  },
-     { name: "suad",   Comment: "loive it"   },
-     { name: "fatemh",   Comment: "can do"   },
+     { name: "noor",   Comment: "loive it"   },
+     { name: "reem",   Comment: "can do"   },
    ];
    function renderArr(array){
    for (let i = 0; i < array.length; i++) {
@@ -108,3 +108,4 @@ function deleteComment(id) {
 mainContainer.html("")
   renderArr(FitnessArr)
   }
+  
